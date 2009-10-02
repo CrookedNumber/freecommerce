@@ -1,0 +1,19 @@
+table.freecommerce-table {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+table.freecommerce-table tr{
+  margin: .25em .75em;
+  padding: .25em .75em;
+}
+
+table.freecommerce-table td{
+  margin: .25em .75em;
+  padding: .25em .75em;
+}
+
+table.freecommerce-table th{
+  margin: .25em .75em;
+  padding: .25em .75em;
+}

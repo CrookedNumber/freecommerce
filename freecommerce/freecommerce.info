@@ -1,0 +1,4 @@
+; $Id$
+name = freeCommerece
+description = A simple cart and ordering system for FREE products
+core = 6.x

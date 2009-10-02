@@ -1,0 +1,21 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Install functions for freeCommerce
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function freecommerce_install() {
+
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function freecommerce_uninstall() {
+
+}
