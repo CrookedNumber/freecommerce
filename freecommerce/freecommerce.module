@@ -1,7 +1,5 @@
 <?php
 // $Id$
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 /**
  * @file
  * A simple cart and ordering system for FREE products (and only FREE products).
@@ -356,9 +354,7 @@ function freecommerce_checkout_submit($form, &$form_state) {
       
       if (variable_get('freecommerce_add_nodereference_email', 0) && module_exists('email') && module_exists('nodereference')) {
         $emails = array_merge($emails, freecommerce_grab_nodereference_emails($node));
-      } 
-      
-      print '<pre>' . print_r($emails, 1) . '</pre>'; 
+      }
       $to = implode(', ', $emails);
       
       global $language;
