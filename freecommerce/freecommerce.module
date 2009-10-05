@@ -92,14 +92,14 @@ function freecommerce_admin_settings(&$form_state, $edit = array()) {
   if (module_exists('email')) {
     $form['contacts']['freecommerce_add_cck_email'] = array(
       '#type' => 'checkbox',
-      '#title' => t('Contact all node emails?'),
+      '#title' => t('Contact all node emails'),
       '#description' => t('If checked, any email field (using the CCK email module) attached to a node in the order will be contacted about the order.'),
       '#default_value' => variable_get('freecommerce_add_cck_email', 0),
     );
     if (module_exists('nodereference')) {
       $form['contacts']['freecommerce_add_nodereference_email'] = array(
         '#type' => 'checkbox',
-        '#title' => t('Contact all nodereference emails?'),
+        '#title' => t('Contact all nodereference emails'),
         '#description' => t('If checked, any email field indirectly attached to a node in the order (via the CCK nodereference module) will be contacted about the order. USE WITH CAUTION!'),
         '#default_value' => variable_get('freecommerce_add_nodereference_email', 0),
       );                                 
