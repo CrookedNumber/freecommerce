@@ -265,9 +265,12 @@ function freecommerce_cart_submit($form, &$form_state) {
     if ($value) {
       $_SESSION['freecommerce_cart'][$key]['quantity'] = $value;
     }
+    if ($value === 0) { // if quantity set 0, simply remove
+      unset($_SESSION['freecommerce_cart'][$key]);
+    }
   }
   foreach ($form_state['values']['remove'] as $key => $value) {
-    if ($value) {
+    if ($value && $_SESSION['freecommerce_cart'][$key]) {
       unset($_SESSION['freecommerce_cart'][$key]);
     }
   }   
